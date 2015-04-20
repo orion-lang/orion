@@ -3,3 +3,23 @@
 [0-9]+ -> INT
 
 [0-9]+\.[0-9]+ -> DOUBLE
+
+\/\/.* -> COMMENT
+
+"--" -> DEC
+"++" -> INC
+
+"+"	-> PLUS
+"-"	-> MINUS
+"*"	-> TIMES
+"/"	-> DIVIDE
+"%"	-> MOD
+"#"	-> CONCAT
+
+"==" -> EQEQ
+"!=" -> NEQ
+"="	-> EQ
+">=" -> GE
+"<=" -> LE
+">"	-> GT
+"<"	-> LT
