@@ -24,6 +24,22 @@
 ">"	-> GT
 "<"	-> LT
 
+"&&" -> AND
+"||" -> OR
+"^^" -> XOR
+
+":" -> COLON
+";" -> SEMI
+"?" -> QMARK
+"." -> DOT
+
+"(" -> LPAREN
+")" -> RPAREN
+"[" -> LBRACKET
+"]" -> RBRACKET
+"{" -> LBRACE
+"}" -> RBRACE
+
 "loop" -> LOOP //loop(cond), loop(init; cond; inc), loop(el in arr)
 
 "if" -> IF
@@ -31,3 +47,5 @@
 
 "new" -> NEW
 (int|double|string|object|bool|any) -> TYPE
+
+"return" -> RETURN
