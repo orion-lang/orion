@@ -23,3 +23,11 @@
 "<=" -> LE
 ">"	-> GT
 "<"	-> LT
+
+"loop" -> LOOP //loop(cond), loop(init; cond; inc), loop(el in arr)
+
+"if" -> IF
+"else" -> ELSE
+
+"new" -> NEW
+(int|double|string|object|bool|any) -> TYPE
