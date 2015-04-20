@@ -46,7 +46,7 @@
 "else" -> ELSE
 
 "new" -> NEW
-(int|double|string|object|bool|any) -> TYPE
+(var|int|double|string|object|bool|any) -> TYPE
 
 "return" -> RETURN
 "break" -> BREAK
