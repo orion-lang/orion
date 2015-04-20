@@ -49,3 +49,5 @@
 (int|double|string|object|bool|any) -> TYPE
 
 "return" -> RETURN
+"break" -> BREAK
+"continue" -> CONTINUE
