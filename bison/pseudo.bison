@@ -17,6 +17,13 @@ loop:       LOOP LPAREN expression RPAREN block
 expression: number
 |           string
 |           boolean
+|           expression PLUS expression
+|           expression MINUS expression
+|           expression TIMES expression
+|           expression DIVIDE expresssion
+|           expression MOD expression
+|           expression CAT expression
+|           LPAREN expression RPAREN
 
 number:     INT
 |           DOUBLE
