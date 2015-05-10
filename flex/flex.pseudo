@@ -51,3 +51,5 @@
 "return" -> RETURN
 "break" -> BREAK
 "continue" -> CONTINUE
+#{2} -> COMMENT 
+
