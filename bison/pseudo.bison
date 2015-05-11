@@ -13,9 +13,9 @@ block:      statement
 assignment: ID EQ expression
 |           TYPE ID EQ expression
 
-loop:       LOOP LPAREN expression RPAREN block
-|           LOOP LPAREN opt_expression SEMI opt_expression SEMI opt_expression RPAREN block
-|           LOOP LPAREN ID IN expression RPAREN block
+loop:       LOOP LPAREN exp RPAREN block
+|           LOOP LPAREN opt_exp SEMI opt_exp SEMI opt_exp RPAREN block
+|           LOOP LPAREN ID IN exp RPAREN block
 
 //if statements are in reality more complex to write in bison
 if:         IF exp block
@@ -30,10 +30,6 @@ switch:     SWITCH exp LBRACE cases RBRACE
 
 cases:      cases CASE exp block
 |           /* empty */
-
-loop:		LOOP LPAREN exp RPAREN block
-|			LOOP LPAREN opt_exp SEMI opt_exp SEMI opt_exp RPAREN block
-|			LOOP LPAREN id IN exp RPAREN block
 
 expression: number
 |           string
