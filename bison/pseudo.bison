@@ -31,6 +31,10 @@ switch:     SWITCH exp LBRACE cases RBRACE
 cases:      cases CASE exp block
 |           /* empty */
 
+loop:		LOOP LPAREN exp RPAREN block
+|			LOOP LPAREN opt_exp SEMI opt_exp SEMI opt_exp RPAREN block
+|			LOOP LPAREN id IN exp RPAREN block
+
 expression: number
 |           string
 |           boolean

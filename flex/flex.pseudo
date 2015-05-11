@@ -40,6 +40,7 @@
 "{" -> LBRACE
 "}" -> RBRACE
 
+"in" -> IN
 "loop" -> LOOP //loop(cond), loop(init; cond; inc), loop(el in arr)
 
 "if" -> IF
